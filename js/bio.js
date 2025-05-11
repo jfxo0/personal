@@ -36,6 +36,7 @@ fetch('https://dcdn.dstn.to/profile/998724908030898196')
         const bioItem = document.createElement('p');
         bioItem.style.fontSize = '15px';
         bioItem.style.textAlign = 'left';
+        bioItem.style.color = 'rgb(32, 32, 32)';
         bioItem.innerHTML = formattedBio;
         bioContainer.appendChild(bioItem);
     })

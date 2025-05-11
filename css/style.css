@@ -62,7 +62,7 @@ body {
 }
 
 .discord-profile {
-    background-color: rgb(32, 32, 32);
+    border: 2px solid rgb(32, 32, 32);
     border-radius: 10px;
     padding: 2px;
     height: 45px;
@@ -98,7 +98,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: 400px 130px;
-    background-color: #2c2c2c;
+    /*background-color: #2c2c2c;*/
     border: 1px solid #ccc;
     box-shadow: 0 0 0px 0px, 0 0 15px 2px #ababab;
     padding: 20px;
@@ -144,10 +144,10 @@ body {
 }
 
 header {
-    background-color: #161616;
+    background-color: rgba(22, 22, 22, 0);
     color: #fff;
     padding: 10px 0;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .logo img {
@@ -191,7 +191,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    background-color: #4b4b4b;
+    background-color: rgba(75, 75, 75, 0.11);
     border-radius: 10px;
     margin-right: 20px;
     transition: transform 0.3s ease;
@@ -207,7 +207,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #484848;
+    background-color: rgba(72, 72, 72, 0);
     box-shadow: 0 0 0px 0px, 0 0 10px 5px #484848;
     color: #fff;
 }
@@ -362,7 +362,7 @@ a:hover {
 }
 
 footer {
-    background-color: #111111;
+    background-color: rgba(17, 17, 17, 0);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -881,8 +881,8 @@ footer {
 }
 
 .connections-list a .icon {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
 }
 

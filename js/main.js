@@ -107,7 +107,7 @@ function fetchAndUpdateStatus() {
                     const remainingTime = `${elapsedMinutes}:${elapsedSeconds.toString().padStart(2, '0')}`;
 
                     document.getElementById('spotifyBox').style.display = 'block';
-                    document.getElementById("listeningText").innerHTML = `<b style="color: #ffffff; font-weight: bold; font-size: 30px">Listening on Spotify</b>`;
+                    document.getElementById("listeningText").innerHTML = `<b style="color: rgb(32, 32, 32); font-weight: bold; font-size: 15px">Listening on Spotify</b>`;
                     document.getElementById("songName").innerHTML = `${songName} <br> By: <b>${songArtist}</b> <br></b>`;
                     document.getElementById("songCover").src = songCover;
                     document.getElementById('progressBar').style.width = progress + '%';
