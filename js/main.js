@@ -25,7 +25,6 @@ function fetchAndUpdateStatus() {
                 const discordData = data.data.discord_user;
                 const discordUsername = discordData.username;
                 const discordAvatar = discordData.avatar;
-
                 const status = data.data.discord_status;
                 const discordActivityText = statusText[status];
                 const discordActivityColor = statusColors[status] || '#dc2525';
@@ -37,7 +36,7 @@ function fetchAndUpdateStatus() {
                 document.getElementById('discordStatusIndicator').style.backgroundColor = discordActivityColor;
                 document.getElementById('discordStatusIndicator').setAttribute('data-status-text', discordActivityText);
                 document.getElementById('discordAvatar').src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.png`;
-                // document.getElementById('discordStatusText').innerText = discordActivityText;
+
 
                 const discordActivities = data.data.activities;
 
