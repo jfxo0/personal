@@ -14,7 +14,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #171717;
+    background: #000 url("../img/background.gif") no-repeat center ;
+    background-size: cover;
     line-height: 1.6;
 }
 
