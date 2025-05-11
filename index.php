@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>-</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!--    <script src="./Scripts/lastPlayedFetch.js"></script>-->
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header>
+    <div class="container"></div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#repos">Repositories</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home" class="home">
+        <div class="container">
+            <div class="status-grid">
+                <div class="status-box" id="status-box">
+                    <img id="discordAvatar" style="border: 4px solid #000000; position: relative; left: -135px; top: 50px; width: 100px; height: 100px; border-radius: 50%;" alt="Image 1">
+                    <div id="discordStatusIndicator"></div>
+                    <div class="discord-profile">
+                        <h3 style="position: relative; text-align: left; top: 6px; left: 10px;" class="username" id="discordUsernameStatus"></h3>
+                    </div>
+                    <div style="margin-top:10px; width: 100%; background-color: rgb(32, 32, 32); border-radius: 10px; height: auto; color: white; padding: 10px;" id="discord-bio">
+                        <p style="font-size: 14px; font-weight:bold; text-align: left; margin-top: -5px;">Discord Bio:</p>
+                        <div id="bio-content"></div>
+                        <script src="js/bio.js"></script>
+                    </div>
+                    <div style="margin-top: 10px; width: 100%; background-color: rgb(32, 32, 32); border-radius: 10px; color: white;" id="activityInfo">
+                        <img id="largeImage" src="" alt="Activity Image">
+                        <div>
+                            <h3 id="activityText"></h3>
+                            <h2 id="activityName"></h2>
+                            <p id="activityState"></p>
+                            <p id="activityDetails"></p>
+                            <p id="largeText"></p>
+                            <p id="elapsedTime"></p>
+                        </div>
+                    </div>
+                    <div id="customStatusBox" style="margin-top: 10px; width: 100%; background-color: rgb(32, 32, 32); border-radius: 10px; color: white;">
+                        <p style="font-size: 14px; font-weight:bold; text-align: left; margin-left: 10px;">Custom Status:</p>
+                        <p style="text-align: left; margin-left: 10px;" id="customStatus"></p>
+                        <p style="text-align: left; margin-left: 10px;display: flex; flex-direction: row"  id="discordStatusText"></p>
+                    </div>
+                    <div id="spotifyBox" style="margin-top: 10px; width: 100%; background-color: rgb(32, 32, 32); border-radius: 10px; height: 25%; display: none;">
+                        <h3 id="listeningText"></h3>
+                        <div class="songCover" data-spotify-text=""> <img id="songCover" style="box-shadow: 0 0 0px 0px, 0 0 15px 2px #000000; margin-top: 5px; width: 70px; height: 70px; margin-left: -70%;" alt="Spotify Cover"></div>
+                        <h3 style="color: #fff; font-weight: normal; font-size: 11px; margin-left: 30%; margin-top: -17%; text-align: left;" id="songName"></h3>
+                        <div style="margin-top: 30px; background-color: #373737; height: 3px; width: 90%; border-radius: 5px; position: relative; left: 20px;">
+                            <div id="progressBar" style="background-color: #fff; height: 100%; width: 0; margin-top: 15%;"></div>
+                            <p id="remainingTime" style="font-size: 14px; color: #fff; position: absolute; top: -20px; right: 0;"></p>
+                            <p id="totalTime" style="font-size: 14px; color: #fff; position: absolute; top: -20px; left: 0;"></p>
+                        </div>
+                    </div>
+
+                    <div class="profile-connections">
+                        <div class="connections-list">
+                            <a href="https://rcstruckingvtc.co.uk/" target="_blank" data-tooltip-text="rcstruckingvtc.co.uk/"><img src="SVGs/website.svg" alt="Website 1" class="icon"></a>
+                            <a href="https://zr1.xyz" target="_blank" data-tooltip-text="zr1.xyz"><img src="SVGs/website.svg" alt="Website 2" class="icon"></a>
+                            <a href="https://tayboost.ac" target="_blank" data-tooltip-text="tayboost.ac"><img src="SVGs/website.svg" alt="Website 2" class="icon"></a>
+                            <a href="https://www.tiktok.com/@zr1_tmp" target="_blank" data-tooltip-text="zr1_tmp"><img src="SVGs/tiktok.svg" alt="TikTok Profile" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p class="copyright-text"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.php"></a>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>-</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=Edge">-->
+<!--    <meta name="description" content="">-->
+<!--    <meta name="twitter:image" content="">-->
+<!--    <meta name="keywords" content="">-->
+<!--    <meta name="author" content="">-->
+<!--    <meta name='mobile-web-app-capable' content='yes'>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+<!--    <script src="./js/main.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="container"></div>-->
+<!--    <nav>-->
+<!--            <a href="#home">Home</a>-->
+<!--            <a href="#projects">Projects</a>-->
+<!--            <a href="#repos">Repositories</a>-->
+<!---->
+<!--    </nav>-->
+<!--</header>-->
+<!--<main>-->
+<!--    <section id="home" class="home">-->
+<!--        <div class="container">-->
+<!--            <div class="status-grid">-->
+<!--                <div class="status-box" id="status-box">-->
+<!---->
+<!--                    <div style="display: flex; justify-content: center; margin-top: 70px; border: 4px solid #2c2c2c;">-->
+<!--                        <div style="display: flex; align-items: center; gap: 30px;">-->
+                            <!-- Avatar with status indicator -->
+<!--                            <div style="position: relative;">-->
+<!--                                <img id="discordAvatar" style="border: 4px solid #2c2c2c; width: 170px; height: auto; border-radius: 50%;" src="" alt="Avatar">-->
+<!--                                <div id="discordStatusIndicator" style="position: absolute; right: 10px; bottom: 10px; width: 25px; height: 25px; border-radius: 50%; border: 3px solid #2c2c2c; background-color: gray;"></div>-->
+<!--                            </div>-->
+<!---->
+                            <!-- Profile text -->
+<!--                            <div class="discord-profile" style="margin-top: -20px;">-->
+<!--                                <h1 id="discordUsernameStatus" style="margin: 0; font-size: 28px;"></h1>-->
+<!--                                <h3 style="margin: 10px 0 5px 0; color: #777;">Custom Status:</h3>-->
+<!--                                <div id="customStatus" style="font-size: 14px; color: #000; font-style: italic;"></div>-->
+<!--                                <p style="text-align: left; margin-left: 10px;display: flex; flex-direction: row"  id="discordStatusText"></p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="profile" style="display: flex; flex-direction: row; gap: 40px; padding-bottom: 80px; align-items: center">-->
+<!--                        <div style="position: relative; left: 20px; top: 70px; display: flex; align-items: center; gap: 30px;">-->
+<!--                             Avatar with status indicator -->
+<!--                            <div style="position: relative;">-->
+<!--                                <img id="discordAvatar" style="border: 4px solid #2c2c2c; width: 170px; height: auto; border-radius: 50%;" src="" alt="Avatar">-->
+<!--                                <div id="discordStatusIndicator" style="position: absolute; right: 10px; bottom: 10px; width: 25px; height: 25px; border-radius: 50%; border: 2px solid #2c2c2c; background-color: gray;"></div>-->
+<!--                            </div>-->
+
+                            <!-- Profile text -->
+<!--                            <div class="discord-profile" style="margin-top: -20px;">-->
+<!--                                <h1 id="discordUsernameStatus" style="margin: 0; font-size: 28px;"></h1>-->
+<!--                                <h3 style="margin: 10px 0 5px 0; color: #777;">Custom Status:</h3>-->
+<!--                                <div id="customStatus" style="font-size: 14px; color: #000; font-style: italic;"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div style="margin-top:10px; width: 100%; background-color: rgba(32,32,32,0); border: 2px solid black; box-shadow: 0 0 5px 1px #000000 ; border-radius: 10px; height: auto; color: #000000; padding: 10px;" id="discord-bio">-->
+<!--                        <p style="font-size: 14px; font-weight:bold; text-align: left; ">Discord Bio:</p>-->
+<!--                        <div id="bio-content"></div>-->
+<!--                        <script src="./js/bio.js"></script>-->
+<!--                    </div>-->
+<!--                    <div style="margin-top: 10px; width: 100%; background-color: rgba(32,32,32,0.36); border-radius: 10px; color: black; align-items: center" id="activityInfo">-->
+<!--                        <img id="largeImage" src="" alt="Activity Image">-->
+<!--                        <div>-->
+<!--                            <h3 id="activityText"></h3>-->
+<!--                            <h2 id="activityName"></h2>-->
+<!--                            <p id="activityState"></p>-->
+<!--                            <p id="activityDetails"></p>-->
+<!--                            <p id="largeText"></p>-->
+<!--                            <p id="elapsedTime"></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div id="spotifyBox" style=" width: 30%; background-color: rgb(32, 32, 32); border-radius: 10px; height: 40%; align-items: center; left: 50px">-->
+<!--                        <h3 id="listeningText"></h3>-->
+<!--                        <div class="songCover" data-spotify-text=""> <img id="songCover" style="box-shadow: 0 0 15px 2px #000000; width: 20%; " alt="Spotify Cover"></div>-->
+<!--                        <h3 style="color: #ffffff; font-weight: normal; font-size: 40px; text-align: center;" id="songName"></h3>-->
+<!--                        <div style="margin-top: 30px; background-color: #373737; height: 3px; width: 90%; border-radius: 5px; position: relative; left: 50px; bottom: 40px; ">-->
+<!--                            <div id="progressBar" style="background-color: #fffcff; height: 100%; width: 0; margin-top: 15%; top: auto;"></div>-->
+<!--                            <p id="remainingTime" style="font-size: 14px; color: #ffffff; position: absolute; top: -50px; right: 0;"></p>-->
+<!--                            <p id="totalTime" style="font-size: 14px; color: #ffffff; position: absolute; top: -50px; left: 0;"></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="song">-->
+<!--                        <label>Miki Matsubara | stay With Me</label>-->
+<!--                        <audio controls controlslist= " nodownload" autoplay loop>-->
+<!--                            <source id="backgroundSong" src="index-song/miki matsubara-stay With Me.mp3" type="audio/mpeg">-->
+<!--                            Your browser does not support the audio element.-->
+<!--                        </audio>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="profile-connections">-->
+<!--                        <div class="connections-list">-->
+<!--                            <a href="https://rcstruckingvtc.co.uk/" target="_blank" data-tooltip-text="rcstruckingvtc.co.uk/"><img src="SVGs/website.svg" alt="Website 1" class="icon"></a>-->
+<!--                            <a href="https://zr1.xyz" target="_blank" data-tooltip-text="zr1.xyz"><img src="SVGs/website.svg" alt="Website 2" class="icon"></a>-->
+<!--                            <a href="https://tayboost.ac" target="_blank" data-tooltip-text="tayboost.ac"><img src="SVGs/website.svg" alt="Website 2" class="icon"></a>-->
+<!--                            <a href="https://www.tiktok.com/@zr1_tmp" target="_blank" data-tooltip-text="zr1_tmp"><img src="SVGs/tiktok.svg" alt="TikTok Profile" class="icon"></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!---->
+<!--</main>-->
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <p class="copyright-text"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.php"></a>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+<!---->
+<!--<html lang="eng">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <script type="text/javascript" src="js/main.js" defer></script>-->
+<!--    <title>lol</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1> welcome to my website</h1>-->
+<!---->
+<!---->
+<!--</head>-->
+<!--<body>-->
+<!---->
+<!--<div class="status-box">-->
+<!--    <h2>Discord Status</h2>-->
+<!---->
+<!--    <div id="name"> </div>-->
+<!--    <p id="discord-status">Loading status...</p>-->
+<!--    <div class="section">-->
+<!--        <span class="label"></span>-->
+<!--        <span class="value" id="custom-status">Loading...</span>-->
+<!--    </div>-->
+<!--    <div class="section">-->
+<!--        <span class="label">Now Playing:</span>-->
+<!--        <span class="value" id="activity-status">Loading...</span>-->
+<!--    </div>-->
+<!--    <div class="section">-->
+<!--        <span class="label">Spotify:</span>-->
+<!--        <span class="value" id="spotify-status">Loading...</span>-->
+<!--    </div>-->
+<!--</div>-->
+<!---->
+<!--</body>-->
+<!---->
+
+<!---->
+<!--<a href="music.php">set music here</a>-->
+<!--</body>-->
+<!--</html>-->
