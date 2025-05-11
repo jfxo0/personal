@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!--    <script src="./Scripts/lastPlayedFetch.js"></script>-->
   <script src="js/main.js"></script>
+
+
 </head>
 <body>
 <header>
@@ -28,9 +30,21 @@
   </nav>
 </header>
 <main>
-  <section id="home" class="home">
-    <div class="container">
-      <div class="status-grid">
+
+  <!-- Blur overlay -->
+  <div id="overlay">
+    <div class="overlay-text">Click to Enter </div>
+  </div>
+
+  <!-- Background music (hidden) -->
+  <audio id="bgMusic" src="index-song/miki%20matsubara-stay%20With%20Me.mp3"></audio>
+    <section class="container">
+      <section id="home" class="home" style="display: none;">
+        <button id="playPauseBtn" class="cute-button">
+          <img id="playPauseIcon" src="https://media.discordapp.net/attachments/1370137895570243664/1371268872753119272/52368BDA-B550-409E-94F7-C331A5DBCB0D.png?ex=68228528&is=682133a8&hm=20fc601d9f9c7cec939cf3bf2aafd4780d2806f7b74ba42dd7683f92c596f904&=&format=webp&quality=lossless&width=800&height=800" alt="Play" />
+        </button>
+        <p style="color: #fff;">pause</p>
+      <section class="status-grid">
         <div class="status-box" id="status-box">
           <img id="discordAvatar" style="border: 3px solid #000000; position: relative; left: -135px; top: 50px; width: 100px; height: 100px; border-radius: 50%;" alt="Image 1">
           <div id="discordStatusIndicator"></div>
@@ -79,18 +93,19 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </section>
+      </section>
+    </section>
+    </section>
 </main>
 <footer>
   <div class="container">
     <p class="copyright-text"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html"></a>
   </div>
 </footer>
+<script src="js/overlay.js"></script>
 </body>
 </html>
+
 
 
 

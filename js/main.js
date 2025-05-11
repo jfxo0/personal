@@ -3,6 +3,9 @@ const apiUrl = `https://api.lanyard.rest/v1/users/${fetchId}`;
 
 let updateInterval;
 
+
+
+
 const statusText = {
     online: 'Online',
     offline: 'Offline',
