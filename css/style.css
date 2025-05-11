@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 
-body {
-    /*cursor: url('/Cursors/pointer.cur'), pointer;*/
-}
+/*body {*/
+/*    cursor: url('/Cursors/pointer.cur'), pointer;*/
+/*}*/
 
-a {
-    /*cursor: url('/Cursors/link.cur'), pointer;*/
-}
+/*a {*/
+/*    cursor: url('/Cursors/link.cur'), pointer;*/
+/*}*/
 
 body {
     font-family: Arial, sans-serif;
     background-color: #171717;
     line-height: 1.6;
-    background-image: url("img/dolia_background.gif");
 }
 
 #discordContainer {
@@ -94,7 +93,7 @@ body {
 .status-box {
     width: 400px;
     height: 700px;
-    background-image: url(https://dcdn.dstn.to/banners/userid.png);
+    background-image: url(https://dcdn.dstn.to/banners/998724908030898196.png);
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: 400px 130px;
@@ -213,7 +212,7 @@ nav ul li a:hover {
 }
 
 .home {
-    background-image: url("img/dolia_background.gif");
+    background-image: url("img/sky.gif");
     opacity: 100%;
     background-size: cover;
     background-position: center;
