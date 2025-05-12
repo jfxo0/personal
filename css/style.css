@@ -353,18 +353,18 @@ nav ul li a:hover {
 }
 
 .about-box a:hover {
-    color: #ff0000;
+    color: #ee97d0;
     text-decoration: underline;
 }
 
 a {
-    color: #b60000;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff0000;
+    color: #f12d9d;
     text-decoration: underline;
 }
 
