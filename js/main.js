@@ -47,8 +47,17 @@ function fetchAndUpdateStatus() {
                 const customStatusActivity = discordActivities.find(activity => activity.type === 4);
                 if (customStatusActivity) {
                     const customEmoji = customStatusActivity.emoji;
-                    const customEmojiHtml = customEmoji ?
-                        `<img src="https://cdn.discordapp.com/emojis/${customEmoji.id}.png" alt="${customEmoji.name}" style="width: 25px; height: 25px; margin-right: 5px;">` : '';
+                    let customEmojiHtml = '';
+
+                    if (customEmoji) {
+                        // Determine if emoji is animated and use correct extension
+                        const extension = customEmoji.animated ? 'gif' : 'png';
+                        customEmojiHtml = `<img src="https://cdn.discordapp.com/emojis/${customEmoji.id}.${extension}" 
+                          alt="${customEmoji.name}" 
+                          style="width: 25px; height: 25px; margin-right: 5px;"
+                          class="discord-custom-emoji">`;
+                    }
+
                     const customText = customStatusActivity.state || 'No Current Status';
                     document.getElementById('customStatus').innerHTML = `${customEmojiHtml} ${customText}`;
                 } else {
