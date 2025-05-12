@@ -33,12 +33,26 @@ function fetchAndUpdateStatus() {
                 const discordActivityColor = statusColors[status] || '#dc2525';
                 const discordUsernameStatus = '#000';
 
+                const isAnimated = discordAvatar.startsWith('a_');
+                const extension = isAnimated ? 'gif' : 'png';
+
+                const avatar = document.getElementById('discordAvatar');
+
                 // Set username, status, and avatar
                 document.getElementById('discordUsernameStatus').innerHTML = `<b>${discordUsername}</b>`;
                 document.getElementById('discordUsernameStatus').style.color = discordUsernameStatus;
                 document.getElementById('discordStatusIndicator').style.backgroundColor = discordActivityColor;
                 document.getElementById('discordStatusIndicator').setAttribute('data-status-text', discordActivityText);
-                document.getElementById('discordAvatar').src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.png`;
+
+
+                avatar.src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.${extension}?size=256&t=${Date.now()}`;
+
+                avatar.onerror = function() {
+                    // Fallback to PNG if GIF fails to load
+                    if (extension === 'gif') {
+                       avatar.src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.png?size=256`;
+                    }
+                };
 
 
                 const discordActivities = data.data.activities;

@@ -270,7 +270,6 @@ nav ul li a:hover {
 }
 
 .home {
-    background-image: url("img/sky.gif");
     opacity: 100%;
     background-size: cover;
     background-position: center;
