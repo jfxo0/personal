@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     playPauseBtn.addEventListener("click", function () {
         if (bgMusic.paused) {
             bgMusic.play();
-            playPauseIcon.src = "../img/dolia_pause.webp";
+            playPauseIcon.src = "./img/dolia_pause.webp";
             playPauseIcon.alt = "Pause";
         } else {
             bgMusic.pause();
-            playPauseIcon.src = "../img/dolia_sad.webp";
+            playPauseIcon.src = "./img/dolia_sad.webp";
             playPauseIcon.alt = "Play";
         }
     });
