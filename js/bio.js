@@ -33,18 +33,7 @@ function convertDiscordMarkdown(text) {
     return text;
 }
 
-
-// Add this CSS to your stylesheet or in a <style> tag
-/*
-.discord-emoji {
-    height: 1em;
-    width: 1em;
-    vertical-align: middle;
-    margin: 0 .05em 0 .1em;
-}
-*/
-
-fetch('https://dcdn.dstn.to/profile/998724908030898196')
+fetch('https://dcdn.dstn.to/profile/891065298957004860')
     .then(response => {
         if (!response.ok) throw new Error('Network response was not ok');
         return response.json();

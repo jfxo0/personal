@@ -1,4 +1,4 @@
-const fetchId = "998724908030898196"; // Your Discord User ID
+const fetchId = "891065298957004860";
 const apiUrl = `https://api.lanyard.rest/v1/users/${fetchId}`;
 
 let updateInterval;
@@ -47,10 +47,10 @@ function fetchAndUpdateStatus() {
 
                 avatar.src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.${extension}?size=256&t=${Date.now()}`;
 
-                avatar.onerror = function() {
+                avatar.onerror = function () {
                     // Fallback to PNG if GIF fails to load
                     if (extension === 'gif') {
-                       avatar.src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.png?size=256`;
+                        avatar.src = `https://cdn.discordapp.com/avatars/${fetchId}/${discordAvatar}.png?size=256`;
                     }
                 };
 
