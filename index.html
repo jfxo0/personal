@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title> my website</title>
   <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon.png">
@@ -18,30 +19,36 @@
 
 
 </head>
+
 <body>
-<header>
-  <div class="container"></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-<!--      <li><a href="#projects">about</a></li>-->
-      <li><a href="html/rules.html">Rules</a></li>
-      <li><p>under construction..</p></li>
-    </ul>
-  </nav>
-</header>
-<main>
+  <header>
+    <div class="container"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!--      <li><a href="#projects">about</a></li>-->
+        <li><a href="html/rules.html">Rules</a></li>
+        <li>
+          <p>under construction..</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
 
 
-  <!-- Background music (hidden) -->
-  <audio id="bgMusic" src="index-song/miki%20matsubara-stay%20With%20Me.mp3"></audio>
+    <!-- Background music (hidden) -->
+    <audio id="bgMusic" src="index-song/miki%20matsubara-stay%20With%20Me.mp3"></audio>
     <section class="container">
-      
+
       <!-- Blur overlay -->
       <div id="overlay">
-        <img class="overlay-text" style="width: 8% " src="https://i.pinimg.com/originals/15/57/5e/15575ea9d399319dca12fc2713635326.gif">
-        <div class="overlay-text" style="font-family: 'Brush Script MT'; text-shadow: pink 0px 1px 10px">Click To Enter </div>
-        <img class="overlay-text" style="width: 8% " src="https://i.pinimg.com/originals/15/57/5e/15575ea9d399319dca12fc2713635326.gif">
+        <img class="overlay-text" style="width: 8% "
+          src="https://i.pinimg.com/originals/15/57/5e/15575ea9d399319dca12fc2713635326.gif">
+        <div class="overlay-text" style="font-family: 'Brush Script MT'; text-shadow: pink 0px 1px 10px">Click To Enter
+        </div>
+        <img class="overlay-text" style="width: 8% "
+          src="https://i.pinimg.com/originals/15/57/5e/15575ea9d399319dca12fc2713635326.gif">
       </div>
 
 
@@ -50,64 +57,98 @@
           <img id="playPauseIcon" src="./img/dolia_pause.webp" alt="Play" />
         </button>
         <p style="color: #fff; text-shadow: pink 0px 1px 10px">pause</p>
-      <section class="status-grid">
-        <div class="status-box" id="status-box">
-          <img id="discordAvatar" style="border: 3px solid #000000; position: relative; left: -135px; top: 50px; width: 100px; height: 100px; border-radius: 50%;" alt="Image 1">
-          <div id="discordStatusIndicator"></div>
-          <div class="discord-profile">
-            <h3 style="position: relative; text-align: left; top: 6px; left: 10px;" class="username" id="discordUsernameStatus"></h3>
-            <span style="position: relative; text-align: left; top: 6px; left: 10px;" class="username" id="guildTag"></span>
-          </div>
-          <div style="margin-top:10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; height: auto; color: white; padding: 10px;" id="discord-bio">
-            <p style=" color: rgb(32, 32, 32);font-size: 14px; font-weight:bold; text-align: left; margin-top: -5px;">Discord Bio:</p>
-            <div id="bio-content"></div>
-            <script src="js/bio.js"></script>
-          </div>
-          <div style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; color: white;" id="activityInfo">
-            <img id="largeImage" src="" alt="Activity Image">
-            <div>
-              <h3 id="activityText"></h3>
-              <h2 id="activityName"></h2>
-              <p id="activityState"></p>
-              <p id="activityDetails"></p>
-              <p id="largeText"></p>
-              <p id="elapsedTime"></p>
-            </div>
-          </div>
-          <div id="customStatusBox" style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; color: white;">
-            <p style=" color: rgb(32, 32, 32);font-size: 14px; font-weight:bold; text-align: left; margin-left: 10px;">Custom Status:</p>
-            <p style=" color: rgb(32, 32, 32);text-align: left; margin-left: 10px;" id="customStatus"></p>
-            <p style="text-align: left; margin-left: 10px;display: flex; flex-direction: row"  id="discordStatusText"></p>
-          </div>
-          <div id="spotifyBox" style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; height: 25%; display: none;">
-            <h3 id="listeningText"></h3>
-            <div class="songCover" data-spotify-text=""> <img id="songCover" style="box-shadow: 0 0 0px 0px, 0 0 15px 2px #000000; margin-top: 5px; width: 70px; height: 70px; margin-left: -70%;" alt="Spotify Cover"></div>
-            <h3 style="color: rgb(32, 32, 32); font-weight: normal; font-size: 11px; margin-left: 30%; margin-top: -17%; text-align: left;" id="songName"></h3>
-            <div style="margin-top: 30px; background-color: #373737; height: 3px; width: 90%; border-radius: 5px; position: relative; left: 20px;">
-              <div id="progressBar" style="background-color: #eea4ad; height: 100%; width: 0; margin-top: 15%;"></div>
-              <p id="remainingTime" style="font-size: 14px; color: rgb(32, 32, 32); position: absolute; top: -20px; right: 0;"></p>
-              <p id="totalTime" style="font-size: 14px; color: rgb(32, 32, 32); position: absolute; top: -20px; left: 0;"></p>
-            </div>
-          </div>
+        <section class="status-grid">
+          <div class="status-box" id="status-box">
 
-          <div class="profile-connections">
-            <div class="connections-list">
-              <a href="https://open.spotify.com/user/t141ijfw4cy3o7o53i8gnhnzk?si=6becabc2a24e489a" target="_blank" data-tooltip-text="spotify"><img src="https://i.pinimg.com/originals/bc/83/98/bc8398f79cec141111ebe8ee609429fa.gif" alt="Website 1" class="icon"></a>
-              <a href="https://x.com/4ngellv?s=21&t=pX_EjybZcXxBfsqjHHf-1g" target="_blank" data-tooltip-text="twitter"><img src="https://i.pinimg.com/originals/89/d5/eb/89d5ebb7bf69518d28031e759641944b.gif" alt="Website 2" class="icon"></a>
-              <a href="https://tl.honorofkings.com/v2/tl/29134_1_tH804GVLhvY" target="_blank" data-tooltip-text="hok"><img src="img/dolia_hok.webp" alt="Website 2" class="icon"></a>
-              <a href="https://discord.gg/x9dM8KrHyS" target="_blank" data-tooltip-text="join"><img src="https://i.pinimg.com/originals/44/d3/e4/44d3e4885b215238e1ca71c925ceea52.gif" alt="TikTok Profile" class="icon"></a>
+            <div class="avatar-wrapper">
+              <img id="discordAvatar" alt="Image 1">
+              <img id="avatarDecoration" alt="">
+              <div id="discordStatusIndicator"></div>
+            </div>
+            <div class="discord-profile">
+              <h3 style="position: relative; text-align: left; top: 6px; left: 10px;" class="username"
+                id="discordUsernameStatus"></h3>
+              <span style="position: relative; text-align: left; top: 6px; left: 10px;" class="username"
+                id="guildTag"></span>
+            </div>
+            <div
+              style="margin-top:10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; height: auto; color: white; padding: 10px;"
+              id="discord-bio">
+              <p style=" color: rgb(32, 32, 32);font-size: 14px; font-weight:bold; text-align: left; margin-top: -5px;">
+                Discord Bio:</p>
+              <div id="bio-content"></div>
+              <script src="js/bio.js"></script>
+            </div>
+            <div
+              style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; color: white;"
+              id="activityInfo">
+              <img id="largeImage" src="" alt="Activity Image">
+              <div>
+                <h3 id="activityText"></h3>
+                <h2 id="activityName"></h2>
+                <p id="activityState"></p>
+                <p id="activityDetails"></p>
+                <p id="largeText"></p>
+                <p id="elapsedTime"></p>
+              </div>
+            </div>
+            <div id="customStatusBox"
+              style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; color: white;">
+              <p
+                style=" color: rgb(32, 32, 32);font-size: 14px; font-weight:bold; text-align: left; margin-left: 10px;">
+                Custom Status:</p>
+              <p style=" color: rgb(32, 32, 32);text-align: left; margin-left: 10px;" id="customStatus"></p>
+              <p style="text-align: left; margin-left: 10px;display: flex; flex-direction: row" id="discordStatusText">
+              </p>
+            </div>
+            <div id="spotifyBox"
+              style="margin-top: 10px; width: 100%; border: 2px solid rgb(32, 32, 32); border-radius: 10px; height: 25%; display: none;">
+              <h3 id="listeningText"></h3>
+              <div class="songCover" data-spotify-text=""> <img id="songCover"
+                  style="box-shadow: 0 0 0px 0px, 0 0 15px 2px #000000; margin-top: 5px; width: 70px; height: 70px; margin-left: -70%;"
+                  alt="Spotify Cover"></div>
+              <h3
+                style="color: rgb(32, 32, 32); font-weight: normal; font-size: 11px; margin-left: 30%; margin-top: -17%; text-align: left;"
+                id="songName"></h3>
+              <div
+                style="margin-top: 30px; background-color: #373737; height: 3px; width: 90%; border-radius: 5px; position: relative; left: 20px;">
+                <div id="progressBar" style="background-color: #eea4ad; height: 100%; width: 0; margin-top: 15%;"></div>
+                <p id="remainingTime"
+                  style="font-size: 14px; color: rgb(32, 32, 32); position: absolute; top: -20px; right: 0;"></p>
+                <p id="totalTime"
+                  style="font-size: 14px; color: rgb(32, 32, 32); position: absolute; top: -20px; left: 0;"></p>
+              </div>
+            </div>
+
+            <div class="profile-connections">
+              <div class="connections-list">
+                <a href="https://open.spotify.com/user/t141ijfw4cy3o7o53i8gnhnzk?si=6becabc2a24e489a" target="_blank"
+                  data-tooltip-text="spotify"><img
+                    src="https://i.pinimg.com/originals/bc/83/98/bc8398f79cec141111ebe8ee609429fa.gif" alt="Website 1"
+                    class="icon"></a>
+                <a href="https://x.com/4ngellv?s=21&t=pX_EjybZcXxBfsqjHHf-1g" target="_blank"
+                  data-tooltip-text="twitter"><img
+                    src="https://i.pinimg.com/originals/89/d5/eb/89d5ebb7bf69518d28031e759641944b.gif" alt="Website 2"
+                    class="icon"></a>
+                <a href="https://tl.honorofkings.com/v2/tl/29134_1_tH804GVLhvY" target="_blank"
+                  data-tooltip-text="hok"><img src="img/dolia_hok.webp" alt="Website 2" class="icon"></a>
+                <a href="https://discord.gg/x9dM8KrHyS" target="_blank" data-tooltip-text="join"><img
+                    src="https://i.pinimg.com/originals/44/d3/e4/44d3e4885b215238e1ca71c925ceea52.gif"
+                    alt="TikTok Profile" class="icon"></a>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </section>
-    </section>
-</main>
-<footer>
-  <div class="container">
-    <p class="copyright-text"> &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html"></a>
-  </div>
-</footer>
-<script src="js/overlay.js"></script>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="copyright-text"> &copy;
+        <script>document.write(new Date().getFullYear())</script> <a href="index.html"></a>
+    </div>
+  </footer>
+  <script src="js/overlay.js"></script>
 </body>
+
 </html>

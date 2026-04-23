@@ -38,6 +38,9 @@ function fetchAndUpdateStatus() {
 
                 const avatar = document.getElementById('discordAvatar');
 
+                const decorationData = data.data.discord_user.avatar_decoration_data;
+                const avatarDecoration = document.getElementById("avatarDecoration");
+
                 // Set username, status, and avatar
                 document.getElementById('discordUsernameStatus').innerHTML = `<b>${discordUsername}</b>`;
                 document.getElementById('discordUsernameStatus').style.color = discordUsernameStatus;
@@ -54,6 +57,12 @@ function fetchAndUpdateStatus() {
                     }
                 };
 
+                if (decorationData?.asset) {
+                    avatarDecoration.src = `https://cdn.discordapp.com/avatar-decoration-presets/${decorationData.asset}.png`;
+                    avatarDecoration.style.display = "block";
+                } else {
+                    avatarDecoration.style.display = "none";
+                }
 
                 const discordActivities = data.data.activities;
 
