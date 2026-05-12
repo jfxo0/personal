@@ -66,23 +66,28 @@ function fetchAndUpdateStatus() {
 
                 const discordActivities = data.data.activities;
 
-                // Handle Custom Status (always shown)
                 const customStatusActivity = discordActivities.find(activity => activity.type === 4);
+
                 if (customStatusActivity) {
                     const customEmoji = customStatusActivity.emoji;
                     let customEmojiHtml = '';
 
-                    if (customEmoji) {
-                        // Determine if emoji is animated and use correct extension
-                        const extension = customEmoji.animated ? 'gif' : 'png';
-                        customEmojiHtml = `<img src="https://cdn.discordapp.com/emojis/${customEmoji.id}.${extension}" 
-                          alt="${customEmoji.name}" 
-                          style="width: 25px; height: 25px; margin-right: 5px;"
-                          class="discord-custom-emoji">`;
+                    if (customEmoji.id) {
+                        const emojiUrl = `https://cdn.discordapp.com/emojis/${customEmoji.id}.png?size=96&quality=lossless`;
+
+                        customEmojiHtml = `
+        <img
+            src="${emojiUrl}"
+            alt="${customEmoji.name || 'emoji'}"
+            class="discord-custom-emoji"
+            style="width: 25px; height: 25px; margin-right: 5px; vertical-align: middle;"
+        >
+    `;
                     }
 
+
                     const customText = customStatusActivity.state || 'No Current Status';
-                    document.getElementById('customStatus').innerHTML = `${customEmojiHtml} ${customText}`;
+                    document.getElementById('customStatus').innerHTML = `${customEmojiHtml}${customEmojiHtml ? ' ' : ''}${customText}`;
                 } else {
                     document.getElementById('customStatus').innerHTML = 'No Current Status';
                 }
