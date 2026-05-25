@@ -92,7 +92,7 @@ function fetchAndUpdateStatus() {
                     document.getElementById('customStatus').innerHTML = 'No Current Status';
                 }
 
-                // Handle Other Activities (only show when active)
+               // activities
                 const nonSpotifyActivity = discordActivities.find(activity =>
                     activity.type !== 4 && activity.name !== 'Spotify' &&
                     (activity.details || activity.state || activity.assets?.large_image)
@@ -125,7 +125,7 @@ function fetchAndUpdateStatus() {
                     document.getElementById('activityInfo').style.display = 'none';
                 }
 
-                // Handle Spotify (only show when active)
+                // spotify
                 if (data.data?.listening_to_spotify) {
                     const spotifyData = data.data.spotify;
                     const songName = spotifyData.song;
