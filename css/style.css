@@ -19,6 +19,11 @@ body {
     line-height: 1.6;
 }
 
+body.about-picture{
+    background: #000 url("../img/background2.gif") no-repeat center;
+    background-size: cover;
+}
+
 /* Overlay styling */
 #overlay {
     position: fixed;
@@ -235,6 +240,13 @@ a.custom-link:active {
     color: #4682b4;
 }
 
+a.about-saku{
+    color: #94b4e3;
+}
+a.about-saku:hover {
+    color: #1b357c;
+    text-decoration: underline;
+}
 nav ul {
     list-style: none;
     text-align: center;
