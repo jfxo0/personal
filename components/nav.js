@@ -7,6 +7,7 @@ nav.innerHTML = `
         <li><a href="../index.html">Home</a></li>
         <li><a href="../html/about.html">about</a></li>
         <li><a href="../html/rules.html">Rules</a></li>
+        <li><a href="../html/friends.html">guestbook</a></li>
         <!--        <li>-->
         <!--          <p>under construction..</p>-->
         <!--        </li>-->

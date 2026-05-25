@@ -807,6 +807,83 @@ footer {
     background: #555;
 }
 
+.friends-page {
+    background-image: url("../img/background.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.friends-box {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: #be6474 0px 1px 10px;
+}
+
+.guestbook {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 182, 193, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.guestbook-subtitle {
+    margin-bottom: 20px;
+    color: #ffd6df;
+}
+
+#guestbookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#guestbookForm input,
+#guestbookForm textarea {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ffb6c1;
+    background: rgba(255, 255, 255, 0.85);
+    font-family: inherit;
+}
+
+#guestbookForm textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+#guestbookForm button {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #ffb6c1;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#guestStatus {
+    margin-top: 12px;
+    color: #fff;
+}
+
+.guest-message {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.18);
+    text-align: left;
+}
+
+.guest-message p {
+    margin: 8px 0 0;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .status-grid {
